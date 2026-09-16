@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Lana Miranda, graduanda em Ciência da Computação e desenvolvedora backend.">
+        <title>Lana Miranda | Portfólio</title>
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            brand: "#136377",
+                            "brand-dark": "#115e59",
+                            accent: "#5eead4"
+                        }
+                    }
+                }
+            };
+        </script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="bg-slate-50 font-sans text-slate-800 transition-colors duration-200 dark:bg-[#202629] dark:text-slate-50">
+        <!-- Navbar -->
+        <nav class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/80 backdrop-blur dark:border-teal-100/15 dark:bg-[#212529]/80">
+            <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+                <a class="text-lg font-semibold tracking-tight" href="#top">
+                    <i class="fa-solid fa-laptop mr-2 text-brand dark:text-accent"></i>Lana Miranda
+                </a>
+                <button id="menuToggle" class="rounded-lg border border-slate-300 px-3 py-2 text-sm md:hidden dark:border-slate-600" type="button" aria-label="Abrir navegação" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div id="navContent" class="absolute left-0 right-0 top-full hidden border-b border-slate-200 bg-white px-5 py-4 md:static md:flex md:items-center md:gap-5 md:border-0 md:bg-transparent md:p-0 dark:border-slate-700 dark:bg-[#212529] md:dark:bg-transparent">
+                    <ul class="flex flex-col gap-3 text-sm font-medium md:flex-row md:items-center md:gap-5">
+                        <li><a class="transition hover:text-brand dark:hover:text-accent" href="#sobre">Sobre</a></li>
+                        <li><a class="transition hover:text-brand dark:hover:text-accent" href="#habilidades">Habilidades</a></li>
+                        <li><a class="transition hover:text-brand dark:hover:text-accent" href="#projetos">Projetos</a></li>
+                        <li><a class="transition hover:text-brand dark:hover:text-accent" href="#experiencia">Experiência</a></li>
+                        <li><a class="transition hover:text-brand dark:hover:text-accent" href="#contato">Contato</a></li>
+                    </ul>
+                    <button id="themeToggle" class="mt-4 rounded-lg border border-slate-300 px-3 py-2 text-sm transition hover:border-brand hover:text-brand md:mt-0 dark:border-slate-600 dark:hover:border-accent dark:hover:text-accent" type="button" aria-label="Alternar tema">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Apresentação -->
+        <header id="top" class="hero-section py-16">
+            <div class="mx-auto grid max-w-6xl items-center gap-12 px-5 lg:grid-cols-3">
+                <div class="text-center">
+                    <div class="profile-frame mx-auto">
+                        <img class="h-full w-full rounded-full object-cover" src="../assets/img/foto.jpg" alt="Foto de Lana Miranda">
+                    </div>
+                    <div class="mt-5 flex justify-center gap-2 text-xs font-semibold">
+                        <span class="rounded-full bg-brand px-3 py-1 text-white dark:bg-accent dark:text-slate-700">Ciência da Computação</span>
+                        <span class="rounded-full bg-slate-500 px-3 py-1 text-white">UFLA</span>
+                    </div>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="eyebrow mb-2">Portfólio profissional</p>
+                    <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">Olá, eu sou <span class="text-brand dark:text-accent">Lana Miranda</span>.</h1>
+                    <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-600 dark:text-slate-300">
+                        Graduanda em Ciência da Computação, com foco em otimização, pesquisa operacional e desenvolvimento backend.
+                    </p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a class="rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-dark dark:bg-teal-700 dark:hover:bg-teal-500" href="https://github.com/lanamiranda17" target="_blank" rel="noreferrer"><i class="fa-brands fa-github mr-2"></i>GitHub</a>
+                        <a class="rounded-lg border border-brand px-4 py-2.5 text-sm font-semibold text-brand transition hover:bg-brand hover:text-white dark:border-accent dark:text-accent dark:hover:bg-accent dark:hover:text-slate-800" href="mailto:lanamiranda112@gmail.com"><i class="fa-solid fa-envelope mr-2"></i>Entre em contato</a>
+                        <a class="rounded-lg border border-slate-400 px-4 py-2.5 text-sm font-semibold text-slate-600 transition hover:border-brand hover:text-brand dark:border-slate-500 dark:text-slate-200 dark:hover:border-accent dark:hover:text-accent" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+                    </div>
+                    <div class="mt-7 grid gap-4 md:grid-cols-2">
+                        <article class="info-card">
+                            <h2 class="font-semibold"><i class="fa-solid fa-graduation-cap mr-2 text-brand dark:text-accent"></i>Formação atual</h2>
+                            <p>Bacharelado em Ciência da Computação - UFLA, 2024–2027.</p>
+                        </article>
+                        <article class="info-card">
+                            <h2 class="font-semibold"><i class="fa-solid fa-compass-drafting mr-2 text-brand dark:text-accent"></i>Formação técnica</h2>
+                            <p>Técnico em Mecânica integrado ao Ensino Médio - IFMG, 2021–2023.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="pb-16">
+            <!-- Sobre -->
+            <section id="sobre" class="section">
+                <div class="section-heading"><p class="eyebrow">Perfil</p><h2>Sobre mim</h2><p>Tecnologia, gestão e comunicação na mesma trajetória.</p></div>
+                <div class="grid gap-6 lg:grid-cols-12">
+                    <article class="card-base p-6 lg:col-span-7">
+                        <p class="leading-7">Sou graduanda em Ciência da Computação pela UFLA e técnica em Mecânica pelo IFMG. Atuo como bolsista de pesquisa em um projeto de otimização de agendamento cirúrgico, realizado pela UFLA em parceria com a EMBRAPII e o Future Lab da UFMG.</p>
+                        <p class="mt-4 leading-7 text-slate-600 dark:text-slate-300">Minha experiência reúne desenvolvimento backend com Java e Spring Boot, pesquisa operacional, gestão de projetos com metodologias ágeis, liderança e atividades comerciais em tecnologia.</p>
+                    </article>
+                    <article class="card-base p-6 lg:col-span-5">
+                        <ul class="space-y-5">
+                            <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-brand dark:text-accent"></i><span><strong>Localização:</strong> Lavras, Minas Gerais, Brasil</span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-language mt-1 text-brand dark:text-accent"></i><span><strong>Idiomas:</strong> Inglês fluente</span></li>
+                            <li class="flex gap-3"><i class="fa-solid fa-laptop-code mt-1 text-brand dark:text-accent"></i><span><strong>Foco:</strong> Otimização, pesquisa operacional e desenvolvimento backend</span></li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section id="habilidades" class="section">
+                <div class="section-heading"><p class="eyebrow">Competências</p><h2>Habilidades e tecnologias</h2><p>Conhecimentos organizados por área de atuação.</p></div>
+                <div class="grid gap-6 md:grid-cols-2">
+                    <article class="card-base p-6">
+                        <h3 class="skill-title"><i class="fa-solid fa-database"></i>Back-end</h3>
+                        <div class="tag-list"><span>Java</span><span>Spring Boot</span><span>APIs REST</span><span>PostgreSQL</span><span>MySQL</span><span class="tag-muted">Git</span><span class="tag-muted">GitLab</span></div>
+                    </article>
+                    <article class="card-base p-6">
+                        <h3 class="skill-title"><i class="fa-solid fa-code"></i>Front-end</h3>
+                        <div class="tag-list"><span>React Native</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span class="tag-muted">GitHub</span></div>
+                    </article>
+                </div>
+                <div class="mt-6 grid gap-6 md:grid-cols-3">
+                    <article class="card-base p-6">
+                        <h3 class="skill-title"><i class="fa-solid fa-people-group"></i>Soft skills</h3>
+                        <ul class="skill-list"><li>Proatividade e aprendizado contínuo</li><li>Colaboração em equipe</li><li>Liderança de equipes</li><li>Comunicação</li><li>Determinação</li></ul>
+                    </article>
+                    <article class="card-base p-6">
+                        <h3 class="skill-title"><i class="fa-solid fa-list-check"></i>Gestão de projetos</h3>
+                        <ul class="skill-list"><li>Scrum e cerimônias ágeis</li><li>Gestão ágil em múltiplos projetos</li><li>Jira</li><li>OpenProject</li><li>Click Up</li></ul>
+                    </article>
+                    <article class="card-base p-6">
+                        <h3 class="skill-title"><i class="fa-solid fa-chart-line"></i>Vendas</h3>
+                        <ul class="skill-list"><li>Estratégia comercial</li><li>Gestão de funil de vendas</li><li>Prospecção e fechamento</li><li>Treinamento de equipe comercial</li><li>Reuniões e acompanhamento com clientes</li></ul>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Projetos -->
+            <section id="projetos" class="section">
+                <div class="section-heading"><p class="eyebrow">Atuação</p><h2>Projetos</h2><p>Projetos dos quais participei nos últimos anos.</p></div>
+                <div class="grid gap-6 lg:grid-cols-3">
+                    <article class="card-base flex flex-col p-6"><div class="project-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Otimização de agendamento cirúrgico</h3><p>Projeto de pesquisa aplicada da UFLA e UFMG para otimização do agendamento de cirurgias na Rede Mater Dei, com desenvolvimento de modelos e heurísticas para apoiar a alocação eficiente de salas e recursos.</p><div class="tag-list mt-auto"><span class="tag-muted">Pesquisa operacional</span><span class="tag-muted">IA</span><span class="tag-muted">Programação Matemática</span><span class="tag-muted">Trabalho em equipe</span></div></article>
+                    <article class="card-base flex flex-col p-6"><div class="project-icon"><i class="fa-solid fa-seedling"></i></div><h3>Geosidagro e Emergências Sanitárias</h3><p>Desenvolvimento backend de módulos do GeoSidagro e Emergências Sanitárias, plataformas da parceria UFLA-IMA voltada à integração de dados e modernização dos processos de fiscalização e defesa agropecuária.</p><div class="tag-list mt-auto"><span class="tag-muted">Java</span><span class="tag-muted">Spring Boot</span><span class="tag-muted">Regras de negócio</span><span class="tag-muted">Trabalho em equipe</span></div></article>
+                    <article class="card-base flex flex-col p-6"><div class="project-icon"><i class="fa-solid fa-people-group"></i></div><h3>Gestão ágil de projetos</h3><p>Atuação como Scrum Master nas equipes do Geosidagro e Emergências Sanitárias no Gedai, laboratório do projeto UFLA-IMA.</p><div class="tag-list mt-auto"><span class="tag-muted">Liderança</span><span class="tag-muted">Organização</span><span class="tag-muted">Condução de reuniões</span></div></article>
+                </div>
+            </section>
+
+            <!-- Experiência -->
+            <section id="experiencia" class="section">
+                <div class="section-heading"><p class="eyebrow">Trajetória</p><h2>Experiência</h2><p>Experiências que conectam desenvolvimento, pesquisa e gestão.</p></div>
+                <div class="grid gap-6 lg:grid-cols-2">
+                    <article class="card-base p-6">
+                        <div class="experience-item"><p>2026 - atual</p><h3>Bolsista de Iniciação Científica</h3><span>Universidade Federal de Lavras</span></div>
+                        <div class="experience-item"><p>Out. 2025 - atual</p><h3>Bolsista de Desenvolvimento Back-End</h3><span>Laboratório GEDAI - FUNDECC / UFLA · APIs com Spring Boot no convênio UFLA-IMA</span></div>
+                        <div class="experience-item last"><p>Jul. 2024 - Set. 2025</p><h3>Bolsista de Scrum</h3><span>Laboratório GEDAI - FUNDECC / UFLA · Scrum Master e apoio à gestão ágil em múltiplos projetos</span></div>
+                    </article>
+                    <article class="card-base p-6">
+                        <div class="experience-item"><p>Jun. 2025 - Jan. 2026</p><h3>Diretora de Vendas</h3><span>Comp Júnior, Empresa Júnior de Tecnologia da UFLA · liderança do setor, estratégia comercial, funil de vendas e treinamento da equipe</span></div>
+                        <div class="experience-item"><p>Mar. 2025 - Jun. 2025</p><h3>Trainee de Front-End e Vendas</h3><span>Comp Júnior · capacitação em React Native e processos comerciais</span></div>
+                        <div class="experience-item last"><p>Jan. 2026 - Mar. 2026</p><h3>Assessora de Vendas</h3><span>Comp Júnior</span></div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contato -->
+            <section id="contato" class="section">
+                <div class="section-heading"><p class="eyebrow">Conexões</p><h2>Contato</h2></div>
+                <div class="grid gap-6 lg:grid-cols-2">
+                    <article class="card-base p-6">
+                        <ul class="space-y-5">
+                            <li><i class="fa-solid fa-envelope mr-3 text-brand dark:text-accent"></i><a href="mailto:lanamiranda112@gmail.com">lanamiranda112@gmail.com</a></li>
+                            <li><i class="fa-brands fa-linkedin mr-3 text-brand dark:text-accent"></i><a href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noreferrer">linkedin.com/in/lana-miranda</a></li>
+                            <li><i class="fa-brands fa-github mr-3 text-brand dark:text-accent"></i><a href="https://github.com/lanamiranda17" target="_blank" rel="noreferrer">github.com/lanamiranda17</a></li>
+                        </ul>
+                    </article>
+                    <aside class="contact-callout flex flex-col justify-center p-6"><i class="fa-solid fa-quote-left mb-3"></i><p class="text-xl font-semibold leading-8">“A única maneira de fazer um ótimo trabalho é amar o que você faz.”</p><p class="mt-2">Steve Jobs.</p></aside>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="border-t border-slate-200 py-6 dark:border-slate-700">
+            <div class="mx-auto max-w-6xl px-5 text-sm text-slate-500 dark:text-slate-300">© <span id="year"></span> Lana Miranda</div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,223 @@
+/* Personalizei isso: ajustes visuais mínimos que complementam as classes do Tailwind */
+.hero-section {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(19, 99, 119, 0.30), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(45, 212, 191, 0.24), transparent 30rem);
+}
+
+.dark .hero-section {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(19, 99, 119, 0.42), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(45, 212, 191, 0.30), transparent 30rem);
+}
+
+.profile-frame {
+    width: 235px;
+    height: 235px;
+    padding: 7px;
+    border-radius: 9999px;
+    background: linear-gradient(135deg, #136377, #2dd4bf);
+    box-shadow: 0 18px 45px rgba(19, 99, 119, 0.24);
+}
+
+.section {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem;
+    scroll-margin-top: 5.5rem;
+}
+
+.section-heading {
+    margin-bottom: 1.5rem;
+}
+
+.section-heading h2 {
+    margin: 0.25rem 0;
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.section-heading > p:last-child,
+.info-card p,
+.card-base > p,
+.experience-item span {
+    color: #475569;
+    line-height: 1.7;
+}
+
+.dark .section-heading > p:last-child,
+.dark .info-card p,
+.dark .card-base > p,
+.dark .experience-item span {
+    color: #cbd5e1;
+}
+
+.eyebrow {
+    color: #136377;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.dark .eyebrow {
+    color: #5eead4;
+}
+
+.card-base,
+.info-card,
+.contact-callout {
+    border: 1px solid rgba(15, 118, 110, 0.16);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.82);
+}
+
+.dark .card-base,
+.dark .info-card,
+.dark .contact-callout {
+    border-color: rgba(94, 234, 212, 0.24);
+    background: #2b363a;
+}
+
+.card-base {
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card-base:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.12);
+}
+
+.info-card {
+    padding: 1rem;
+}
+
+.info-card p {
+    margin-top: 0.5rem;
+}
+
+.skill-title {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.skill-title i {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.skill-title i,
+.skill-list li::before {
+    color: #136377;
+}
+
+.dark .skill-title i,
+.dark .skill-list li::before {
+    color: #ecfeff;
+    text-shadow: 0 0 0.35rem rgba(94, 234, 212, 0.45);
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-list span {
+    border-radius: 9999px;
+    background: #136377;
+    padding: 0.25rem 0.65rem;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.tag-list .tag-muted {
+    background: #64748b;
+}
+
+.dark .tag-list span {
+    background: #5eead4;
+    color: #374151;
+}
+
+.dark .tag-list .tag-muted {
+    border: 1px solid #64748b;
+    background: #475569;
+    color: #f8fafc;
+}
+
+.skill-list {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.skill-list li::before {
+    content: "✓";
+    margin-right: 0.5rem;
+    font-weight: 700;
+}
+
+.project-icon {
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    place-items: center;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+    background: rgba(19, 99, 119, 0.1);
+    color: #136377;
+}
+
+.dark .project-icon {
+    background: rgba(94, 234, 212, 0.12);
+    color: #5eead4;
+}
+
+.card-base h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+    border-left: 2px solid rgba(19, 99, 119, 0.35);
+    padding-left: 1rem;
+}
+
+.experience-item.last {
+    margin-bottom: 0;
+}
+
+.experience-item p {
+    margin-bottom: 0.2rem;
+    color: #136377;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.dark .experience-item {
+    border-color: rgba(94, 234, 212, 0.5);
+}
+
+.dark .experience-item p {
+    color: #5eead4;
+}
+
+.contact-callout i {
+    color: #136377;
+    font-size: 1.2rem;
+}
+
+.dark .contact-callout i {
+    color: #5eead4;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-base {
+        transition: none;
+    }
+}

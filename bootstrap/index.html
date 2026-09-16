@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio de Lana Miranda, graduanda em Ciência da Computação e desenvolvedora backend.">
+        <title>Lana Miranda | Portfólio</title>
+
+        <!-- Bootstrap 5 (CSS) -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome (ícones) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <!-- CSS do projeto (externo) -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body class="bg-body">
+        <!-- Personalizei isso: dados, textos e links profissionais substituem os conteúdos genéricos do tutorial -->
+        <!-- Personalizei isso: navegação com identidade profissional -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg border-bottom bg-body sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-semibold" href="#top">
+                    <i class="fa-solid fa-laptop me-2"></i>Lana Miranda
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Abrir navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav ms-auto gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                    </ul>
+                    <div class="ms-lg-3 d-flex align-items-center gap-2 py-2 py-lg-0">
+                        <span class="small text-secondary d-none d-lg-inline">Tema</span>
+                        <button id="themeToggle" class="btn btn-outline-secondary btn-sm" type="button" aria-label="Alternar tema">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Personalizei isso: apresentação, formação e links profissionais -->
+        <!-- Header / Informações Básicas -->
+        <header id="top" class="hero-section py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-12 col-lg-4 text-center">
+                        <div class="profile-frame mx-auto">
+                            <img class="profile-img" src="assets/img/foto.jpg" alt="Foto de Lana Miranda">
+                        </div>
+                        <div class="mt-4">
+                            <span class="badge rounded-pill text-bg-primary me-1">Ciência da Computação</span>
+                            <span class="badge rounded-pill text-bg-secondary">UFLA</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <p class="eyebrow mb-2">Portfólio profissional</p>
+                        <h1 class="display-5 fw-bold mb-3">
+                            Olá, eu sou <span class="text-primary">Lana Miranda</span>.
+                        </h1>
+                        <p class="lead text-secondary mb-4">
+                            Graduanda em Ciência da Computação, com foco em otimização, pesquisa operacional e desenvolvimento backend.
+                        </p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn btn-primary" href="https://github.com/lanamiranda17" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-github me-2"></i>GitHub
+                            </a>
+                            <a class="btn btn-outline-primary" href="mailto:lanamiranda112@gmail.com">
+                                <i class="fa-solid fa-envelope me-2"></i>Entre em contato
+                            </a>
+                            <a class="btn btn-outline-secondary" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noreferrer">
+                                <i class="fa-brands fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                        </div>
+                        <div class="row g-3 mt-3">
+                            <div class="col-12 col-md-6">
+                                <div class="info-card p-3 h-100">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <i class="fa-solid fa-graduation-cap text-primary"></i>
+                                        <strong>Formação atual</strong>
+                                    </div>
+                                    <p class="mb-0 text-secondary">
+                                        Bacharelado em Ciência da Computação - UFLA, 2024–2027.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="info-card p-3 h-100">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <i class="fa-solid fa-compass-drafting text-primary"></i>
+                                        <strong>Formação técnica</strong>
+                                    </div>
+                                    <p class="mb-0 text-secondary">
+                                        Técnico em Mecânica integrado ao Ensino Médio - IFMG, 2021–2023.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="pb-5">
+            <!-- Personalizei isso: resumo profissional e foco de atuação -->
+            <!-- Sobre -->
+            <section id="sobre" class="py-4">
+                <div class="container">
+                    <div class="section-title mb-3">
+                        <p class="eyebrow mb-1">Perfil</p>
+                        <h2 class="h3 mb-1">Sobre mim</h2>
+                        <p class="text-secondary mb-0">Tecnologia, gestão e comunicação na mesma trajetória.</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-7">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <p class="mb-3">
+                                        Sou graduanda em Ciência da Computação pela UFLA e técnica em Mecânica pelo IFMG. Atuo como bolsista de pesquisa em um projeto de otimização de agendamento cirúrgico, realizado pela UFLA em parceria com a EMBRAPII e o Future Lab da UFMG.
+                                    </p>
+                                    <p class="mb-0 text-secondary">
+                                        Minha experiência reúne desenvolvimento backend com Java e Spring Boot, pesquisa operacional, gestão de projetos com metodologias ágeis, liderança e atividades comerciais em tecnologia.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-5">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="d-flex gap-3 mb-4">
+                                            <i class="fa-solid fa-location-dot text-primary mt-1"></i>
+                                            <div><strong>Localização:</strong> Lavras, Minas Gerais, Brasil</div>
+                                        </li>
+                                        <li class="d-flex gap-2 mb-4">
+                                            <i class="fa-solid fa-language text-primary mt-1"></i>
+                                            <div><strong>Idiomas:</strong> Inglês fluente</div>
+                                        </li>
+                                        <li class="d-flex gap-2">
+                                            <i class="fa-solid fa-laptop-code text-primary mt-1"></i>
+                                            <div><strong>Foco:</strong> Otimização, pesquisa operacional e desenvolvimento backend</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personalizei isso: tecnologias organizadas por área de atuação -->
+            <!-- Habilidades -->
+            <section id="habilidades" class="py-4">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="eyebrow mb-1">Competências</p>
+                        <h2 class="h3 mb-1">Habilidades e tecnologias</h2>
+                        <p class="text-secondary mb-0">Conhecimentos organizados por área de atuação.</p>
+                    </div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-12 col-md-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="h5 mb-3"><i class="fa-solid fa-database text-primary me-2"></i>Back-end</h3>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge rounded-pill text-bg-primary">Java</span>
+                                        <span class="badge rounded-pill text-bg-primary">Spring Boot</span>
+                                        <span class="badge rounded-pill text-bg-primary">APIs REST</span>
+                                        <span class="badge rounded-pill text-bg-primary">PostgreSQL</span>
+                                        <span class="badge rounded-pill text-bg-primary">MySQL</span>
+                                        <span class="badge rounded-pill text-bg-secondary">Git</span>
+                                        <span class="badge rounded-pill text-bg-secondary">GitLab</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="h5 mb-3"><i class="fa-solid fa-code text-primary me-2"></i>Front-end</h3>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge rounded-pill text-bg-primary">React Native</span>
+                                        <span class="badge rounded-pill text-bg-primary">Html</span>
+                                        <span class="badge rounded-pill text-bg-primary">Css</span>                                        
+                                        <span class="badge rounded-pill text-bg-primary">JavaScript</span>
+                                        <span class="badge rounded-pill text-bg-secondary">GitHub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="h5 mb-3"><i class="fa-solid fa-people-group text-primary me-2"></i>Soft skills</h3>
+                                    <ul class="feature-list list-unstyled mb-0">
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Proatividade e aprendizado contínuo</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Colaboração em equipe</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Liderança de equipes</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Comunicação</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Determinação</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="h5 mb-3"><i class="fa-solid fa-list-check text-primary me-2"></i>Gestão de projetos</h3>
+                                    <ul class="feature-list list-unstyled mb-0">
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Scrum e cerimônias ágeis</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Gestão ágil em múltiplos projetos</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Jira</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>OpenProject</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Click Up</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Personalizei isso: competências de vendas em um quadro próprio -->
+                        <div class="col-12 col-md-4">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="h5 mb-3"><i class="fa-solid fa-chart-line text-primary me-2"></i>Vendas</h3>
+                                    <ul class="feature-list list-unstyled mb-0">
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Estratégia comercial</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Gestão de funil de vendas</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Prospecção e fechamento</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Treinamento de equipe comercial</li>
+                                        <li><i class="fa-solid fa-check text-primary me-2"></i>Reuniões e acompanhamento com clientes</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personalizei isso: projetos baseados nas experiências profissionais -->
+            <!-- Projetos -->
+            <section id="projetos" class="py-4">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="eyebrow mb-1">Atuação</p>
+                        <h2 class="h3 mb-1">Projetos</h2>
+                        <p class="text-secondary mb-0">Projetos dos quais participei nos últimos anos.</p>
+                    </div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-12 col-lg-4">
+                            <article class="card shadow-sm h-100">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="project-icon mb-3"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <h3 class="h5">Otimização de agendamento cirúrgico</h3>
+                                    <p class="text-secondary">
+                                        Projeto de pesquisa aplicada da UFLA e UFMG para otimização do agendamento de cirurgias na Rede Mater Dei, com desenvolvimento de modelos e heurísticas para apoiar a alocação eficiente de salas e recursos.
+                                    </p>
+                                    <div class="mt-auto">
+                                        <span class="badge text-bg-secondary">Pesquisa operacional</span>
+                                        <span class="badge text-bg-secondary">IA</span>
+                                        <span class="badge text-bg-secondary">Programação Matemática</span>
+                                        <span class="badge text-bg-secondary">Trabalho em equipe</span>
+                                    </div>
+                                    
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <article class="card shadow-sm h-100">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="project-icon mb-3"><i class="fa-solid fa-seedling"></i></div>
+                                    <h3 class="h5">Geosidagro e Emergências Sanitárias</h3>
+                                    <p class="text-secondary">
+                                        Desenvolvimento backend de módulos do GeoSidagro e Emergências Sanitárias, plataformas da parceria UFLA–IMA voltada à integração de dados e modernização dos processos de fiscalização e defesa agropecuária.
+                                    </p>
+                                    <div class="mt-auto d-flex flex-wrap gap-2">
+                                        <span class="badge text-bg-secondary">Java</span>
+                                        <span class="badge text-bg-secondary">Spring Boot</span>
+                                        <span class="badge text-bg-secondary">Regras de negócio</span>
+                                        <span class="badge text-bg-secondary">Trabalho em equipe</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <article class="card shadow-sm h-100">
+                                <div class="card-body p-4 d-flex flex-column">
+                                    <div class="project-icon mb-3"><i class="fa-solid fa-people-group"></i></div>
+                                    <h3 class="h5">Gestão ágil de projetos</h3>
+                                    <p class="text-secondary">
+                                        Atuação como Scrum Master nas equipes do Geosidagro e Emergências Sanitárias no Gedai, laboratório do projeto UFLA–IMA.</p>
+                                    <div class="mt-auto">
+                                        <span class="badge text-bg-secondary">Liderança</span>
+                                        <span class="badge text-bg-secondary">Organização</span>
+                                        <span class="badge text-bg-secondary">COndução de reuniões</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personalizei isso: experiências, incluindo a liderança na empresa júnior -->
+            <!-- Experiência -->
+            <section id="experiencia" class="py-4">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="eyebrow mb-1">Trajetória</p>
+                        <h2 class="h3 mb-1">Experiência</h2>
+                        <p class="text-secondary mb-0">Experiências que conectam desenvolvimento, pesquisa e gestão.</p>
+                    </div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-12 col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="experience-item">
+                                        <p class="small text-primary fw-semibold mb-1">2026 - atual</p>
+                                        <h3 class="h5 mb-1">Bolsista de Iniciação Científica</h3>
+                                        <p class="text-secondary mb-0">Universidade Federal de Lavras</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <p class="small text-primary fw-semibold mb-1">Out. 2025 - atual</p>
+                                        <h3 class="h5 mb-1">Bolsista de Desenvolvimento Back-End</h3>
+                                        <p class="text-secondary mb-0">Laboratório GEDAI - FUNDECC / UFLA · APIs com Spring Boot no convênio UFLA–IMA</p>
+                                    </div>
+                                    <div class="experience-item mb-0">
+                                        <p class="small text-primary fw-semibold mb-1">Jul. 2024 - Set. 2025</p>
+                                        <h3 class="h5 mb-1">Bolsista de Scrum</h3>
+                                        <p class="text-secondary mb-0">Laboratório GEDAI - FUNDECC / UFLA · Scrum Master e apoio à gestão ágil em múltiplos projetos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <div class="experience-item">
+                                        <p class="small text-primary fw-semibold mb-1">Jun. 2025 - Jan. 2026</p>
+                                        <h3 class="h5 mb-1">Diretora de Vendas</h3>
+                                        <p class="text-secondary mb-0">Comp Júnior, Empresa Júnior de Tecnologia da UFLA · liderança do setor, estratégia comercial, funil de vendas e treinamento da equipe</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <p class="small text-primary fw-semibold mb-1">Mar. 2025 - Jun. 2025</p>
+                                        <h3 class="h5 mb-1">Trainee de Front-End e Vendas</h3>
+                                        <p class="text-secondary mb-0">Comp Júnior · capacitação em React Native e processos comerciais</p>
+                                    </div>
+                                    <div class="experience-item">
+                                        <p class="small text-primary fw-semibold mb-1">Jan. 2026 - Mar. 2026</p>
+                                        <h3 class="h5 mb-1">Assessora de Vendas</h3>
+                                        <p class="text-secondary mb-0">Comp Júnior</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Personalizei isso: canais de contato profissionais -->
+            <!-- Contato -->
+            <section id="contato" class="py-4">
+                <div class="container">
+                    <div class="section-title">
+                        <p class="eyebrow mb-1">Conexões</p>
+                        <h2 class="h3 mb-1">Contato</h2>
+                    </div>
+                    <div class="row g-4 mt-1">
+                        <div class="col-12 col-lg-6">
+                            <div class="card shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <ul class="contact-list list-unstyled mb-0">
+                                        <li class="d-flex gap-3 align-items-center mb-3">
+                                            <i class="fa-solid fa-envelope text-primary"></i>
+                                            <a class="link-underline link-underline-opacity-0" href="mailto:lanamiranda112@gmail.com">lanamiranda112@gmail.com</a>
+                                        </li>
+                                        <li class="d-flex gap-3 align-items-center mb-3">
+                                            <i class="fa-brands fa-linkedin text-primary"></i>
+                                            <a class="link-underline link-underline-opacity-0" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noreferrer">linkedin.com/in/lana-miranda</a>
+                                        </li>
+                                        <li class="d-flex gap-3 align-items-center">
+                                            <i class="fa-brands fa-github text-primary"></i>
+                                            <a class="link-underline link-underline-opacity-0" href="https://github.com/lanamiranda17" target="_blank" rel="noreferrer">github.com/lanamiranda17</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Personalizei isso: frase de efeito para equilibrar a seção de contato -->
+                        <div class="col-12 col-lg-6">
+                            <aside class="contact-callout h-100 p-4 d-flex flex-column justify-content-center">
+                                <i class="fa-solid fa-quote-left mb-3" aria-hidden="true"></i>
+                                <p class="h5 mb-2">“A única maneira de fazer um ótimo trabalho é amar o que você faz.”</p>
+                                <p class="mb-0"> Steve Jobs.</p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Personalizei isso: identificação do portfólio -->
+        <!-- Rodapé da Página -->
+        <footer class="border-top py-4">
+            <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+                <small class="text-secondary">© <span id="year"></span> Lana Miranda</small>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS (necessário para navbar colapsável) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- JS do projeto -->
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

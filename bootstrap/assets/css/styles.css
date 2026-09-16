@@ -1,0 +1,222 @@
+/* Personalizei isso: identidade visual profissional em tons de verde-petróleo */
+:root {
+    --portfolio-accent: #136377;
+--portfolio-accent-dark: #115e59;
+
+--portfolio-surface: rgba(255, 255, 255, 0.72);
+--portfolio-border: rgba(15, 118, 110, 0.16);
+
+--bs-primary: #0f766e;
+--bs-primary-rgb: 15, 118, 110;
+
+--bs-link-color: #0f766e;
+--bs-link-hover-color: #115e59;
+}
+
+body {
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.navbar {
+    backdrop-filter: blur(14px);
+    background-color: var(--portfolio-surface);
+}
+
+.navbar-brand {
+    letter-spacing: -0.02em;
+}
+
+.hero-section {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(19, 99, 119, 0.3), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(45, 212, 191, 0.24), transparent 30rem);
+}
+
+/* Personalizei isso: foto de perfil ampliada com borda em gradiente */
+.profile-frame {
+    display: grid;
+    place-items: center;
+    width: 235px;
+    height: 235px;
+    padding: 7px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--portfolio-accent), #2dd4bf);
+    box-shadow: 0 18px 45px rgba(19, 99, 119, 0.24);
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 50%;
+    background: var(--bs-body-bg);
+}
+
+.eyebrow {
+    color: var(--portfolio-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+/* Personalizei isso: componentes Bootstrap com a paleta verde-petróleo */
+.text-primary {
+    color: var(--portfolio-accent) !important;
+}
+
+.text-bg-primary {
+    color: #fff !important;
+    background-color: var(--portfolio-accent) !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--portfolio-accent);
+    --bs-btn-border-color: var(--portfolio-accent);
+    --bs-btn-hover-bg: var(--portfolio-accent-dark);
+    --bs-btn-hover-border-color: var(--portfolio-accent-dark);
+    --bs-btn-active-bg: var(--portfolio-accent-dark);
+    --bs-btn-active-border-color: var(--portfolio-accent-dark);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--portfolio-accent);
+    --bs-btn-border-color: var(--portfolio-accent);
+    --bs-btn-hover-bg: var(--portfolio-accent);
+    --bs-btn-hover-border-color: var(--portfolio-accent);
+    --bs-btn-active-bg: var(--portfolio-accent-dark);
+    --bs-btn-active-border-color: var(--portfolio-accent-dark);
+}
+
+.info-card {
+    border: 1px solid var(--portfolio-border);
+    border-radius: 1rem;
+    background: var(--bs-tertiary-bg);
+}
+
+.card {
+    overflow: hidden;
+    border-color: var(--portfolio-border);
+    border-radius: 1rem;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, 0.1) !important;
+}
+
+.feature-list li {
+    padding: 0.45rem 0;
+}
+
+/* Personalizei isso: ícones de habilidades com contraste mais vibrante */
+#habilidades .text-primary {
+    color: #0f766e !important;
+}
+
+.project-icon,
+.contact-icon {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.8rem;
+    color: var(--portfolio-accent);
+    background: rgba(19, 99, 119, 0.1);
+}
+
+.experience-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid rgba(19, 99, 119, 0.3);
+}
+
+.contact-list i {
+    width: 1.2rem;
+    text-align: center;
+}
+
+/* Personalizei isso: destaque visual para a mensagem de contato */
+.contact-callout {
+    border: 1px solid var(--portfolio-border);
+    border-radius: 1rem;
+    color: var(--bs-body-color);
+    background: var(--bs-tertiary-bg);
+    box-shadow: none;
+}
+
+.contact-callout i {
+    color: var(--portfolio-accent);
+    font-size: 1.2rem;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+:root[data-bs-theme="dark"] {
+    --portfolio-accent: #5eead4;
+    --portfolio-accent-dark: #2dd4bf;
+    --portfolio-surface: rgba(33, 37, 41, 0.78);
+    --portfolio-border: rgba(94, 234, 212, 0.24);
+    --bs-body-color: #f8fafc;
+    --bs-secondary-color: #cbd5e1;
+    --bs-tertiary-bg: #2b363a;
+    --bs-link-color: #5eead4;
+    --bs-link-hover-color: #99f6e4;
+}
+
+/* Personalizei isso: contraste reforçado para leitura no tema escuro */
+:root[data-bs-theme="dark"] .text-secondary {
+    color: #cbd5e1 !important;
+}
+
+:root[data-bs-theme="dark"] .text-primary,
+:root[data-bs-theme="dark"] .eyebrow,
+:root[data-bs-theme="dark"] #habilidades .text-primary {
+    color: #5eead4 !important;
+}
+
+/* Personalizei isso: tags de habilidades com contraste reforçado no tema escuro */
+:root[data-bs-theme="dark"] #habilidades .badge.text-bg-primary {
+    color: #374151 !important;
+    background-color: #5eead4 !important;
+}
+
+:root[data-bs-theme="dark"] #habilidades .badge.text-bg-secondary {
+    color: #f8fafc !important;
+    background-color: #475569 !important;
+    border: 1px solid #64748b;
+}
+
+:root[data-bs-theme="dark"] .btn-primary {
+    --bs-btn-bg: #0f766e;
+    --bs-btn-border-color: #0f766e;
+    --bs-btn-hover-bg: #14b8a6;
+    --bs-btn-hover-border-color: #14b8a6;
+}
+
+:root[data-bs-theme="dark"] .btn-outline-primary {
+    --bs-btn-color: #5eead4;
+    --bs-btn-border-color: #5eead4;
+    --bs-btn-hover-bg: #2dd4bf;
+    --bs-btn-hover-border-color: #2dd4bf;
+    --bs-btn-hover-color: #102a2e;
+}
+
+:root[data-bs-theme="dark"] .hero-section {
+    background:
+        radial-gradient(circle at 10% 15%, rgba(19, 99, 119, 0.42), transparent 34rem),
+        radial-gradient(circle at 90% 10%, rgba(45, 212, 191, 0.3), transparent 30rem);
+}
+
+:root[data-bs-theme="dark"] .card:hover {
+    box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.28) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}

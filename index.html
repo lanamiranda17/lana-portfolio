@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Selecione uma versão do portfólio de Lana Miranda.">
+        <title>Lana Miranda | Portfólio</title>
+        <style>
+            :root {
+                color-scheme: light;
+                --brand: #136377;
+                --brand-dark: #115e59;
+                --accent: #2dd4bf;
+                --text: #1e293b;
+                --muted: #64748b;
+                --surface: rgba(255, 255, 255, 0.88);
+                --border: rgba(19, 99, 119, 0.18);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                display: grid;
+                min-height: 100vh;
+                margin: 0;
+                place-items: center;
+                padding: 1.5rem;
+                color: var(--text);
+                font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+                background:
+                    radial-gradient(circle at 12% 15%, rgba(19, 99, 119, 0.22), transparent 32rem),
+                    radial-gradient(circle at 88% 82%, rgba(45, 212, 191, 0.2), transparent 28rem),
+                    #f8fafc;
+            }
+
+            main {
+                width: min(100%, 54rem);
+                text-align: center;
+            }
+
+            .brand {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.6rem;
+                color: var(--brand);
+                font-size: 1.125rem;
+                font-weight: 700;
+                letter-spacing: -0.02em;
+            }
+
+            .brand-mark {
+                display: grid;
+                width: 2.25rem;
+                height: 2.25rem;
+                place-items: center;
+                border-radius: 0.7rem;
+                color: white;
+                background: linear-gradient(135deg, var(--brand), var(--accent));
+                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                font-weight: 800;
+            }
+
+            h1 {
+                margin: 1.75rem 0 0.75rem;
+                font-size: clamp(2rem, 5vw, 3.25rem);
+                letter-spacing: -0.05em;
+            }
+
+            .intro {
+                max-width: 38rem;
+                margin: 0 auto;
+                color: var(--muted);
+                font-size: 1.1rem;
+                line-height: 1.65;
+            }
+
+            .versions {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.25rem;
+                margin-top: 2.75rem;
+            }
+
+            .version-card {
+                display: block;
+                min-height: 12rem;
+                padding: 1.75rem;
+                border: 1px solid var(--border);
+                border-radius: 1.25rem;
+                color: inherit;
+                text-align: left;
+                text-decoration: none;
+                background: var(--surface);
+                box-shadow: 0 0.75rem 2rem rgba(15, 23, 42, 0.06);
+                transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+            }
+
+            .version-card:hover,
+            .version-card:focus-visible {
+                border-color: var(--brand);
+                outline: none;
+                box-shadow: 0 1.25rem 2.5rem rgba(19, 99, 119, 0.16);
+                transform: translateY(-0.35rem);
+            }
+
+            .icon {
+                display: grid;
+                width: 2.8rem;
+                height: 2.8rem;
+                place-items: center;
+                border-radius: 0.85rem;
+                color: var(--brand);
+                background: rgba(19, 99, 119, 0.1);
+                font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                font-size: 1.15rem;
+                font-weight: 800;
+            }
+
+            .version-card:nth-child(2) .icon {
+                color: #0f766e;
+                background: rgba(45, 212, 191, 0.18);
+            }
+
+            .version-card h2 {
+                margin: 1.25rem 0 0.45rem;
+                font-size: 1.25rem;
+            }
+
+            .version-card p {
+                margin: 0;
+                color: var(--muted);
+                line-height: 1.55;
+            }
+
+            .open {
+                display: inline-block;
+                margin-top: 1.25rem;
+                color: var(--brand);
+                font-size: 0.9rem;
+                font-weight: 700;
+            }
+
+            @media (max-width: 38rem) {
+                body {
+                    padding: 1rem;
+                }
+
+                .versions {
+                    grid-template-columns: 1fr;
+                    margin-top: 2rem;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .version-card {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="brand"><span class="brand-mark">&lt;/&gt;</span>Lana Miranda</div>
+            <h1>Portfólio</h1>
+            <p class="intro">Escolha a versão do portfólio que deseja visualizar.</p>
+
+            <div class="versions">
+                <a class="version-card" href="./bootstrap/index.html">
+                    <span class="icon">B</span>
+                    <h2>Versão Bootstrap</h2>
+                    <p>Portfólio desenvolvido com os componentes e utilitários do Bootstrap.</p>
+                    <span class="open">Abrir versão →</span>
+                </a>
+                <a class="version-card" href="./tailwind/index.html">
+                    <span class="icon">T</span>
+                    <h2>Versão Tailwind</h2>
+                    <p>Portfólio desenvolvido com classes utilitárias do Tailwind CSS.</p>
+                    <span class="open">Abrir versão →</span>
+                </a>
+            </div>
+        </main>
+    </body>
+</html>

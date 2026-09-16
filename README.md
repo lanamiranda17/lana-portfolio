@@ -1,6 +1,6 @@
-# Portfólio Pessoal
+# Portfólio Profissional
 
-Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, apresentando informações sobre minha formação, experiências, projetos, habilidades e formas de contato.
+Portfólio profissional desenvolvido com HTML, CSS e JavaScript, apresentando informações sobre minha formação, experiências, projetos, habilidades e formas de contato.
 
 O projeto possui duas versões equivalentes da mesma página, desenvolvidas com frameworks CSS diferentes:
 
@@ -16,7 +16,7 @@ Ao acessar a página principal do projeto, é possível escolher qual implementa
 - Versão Bootstrap
 - Versão Tailwind CSS
 
-🔗 **GitHub Pages:**  ``
+🔗 **GitHub Pages:**  `https://lanamiranda17.github.io/lana-portfolio/`
 
 ## Tecnologias
 

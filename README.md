@@ -1,50 +1,57 @@
-# Portfólio Profissional
+# Lana Miranda — Portfólio
 
-Portfólio profissional desenvolvido com HTML, CSS e JavaScript, apresentando informações sobre minha formação, experiências, projetos, habilidades e formas de contato.
+Portfólio profissional de **Lana Miranda**, estudante de Ciência da Computação na Universidade Federal de Lavras (UFLA), com foco em **Engenharia de Software, Inteligência Artificial e Pesquisa Operacional**.
 
-O projeto possui duas versões equivalentes da mesma página, desenvolvidas com frameworks CSS diferentes:
+🔗 **Publicado em:** https://lanamiranda17.github.io/lana-portfolio/
 
-- Bootstrap
-- Tailwind CSS
+O endereço raiz abre diretamente a versão profissional, em [`portfolio/`](portfolio/).
 
-A proposta é comparar diferentes abordagens de estilização e desenvolvimento de interfaces responsivas, mantendo o mesmo conteúdo e funcionalidades em ambas as versões.
+## Conteúdo
 
-## Visualização
-
-Ao acessar a página principal do projeto, é possível escolher qual implementação do portfólio deseja visualizar:
-
-- Versão Bootstrap
-- Versão Tailwind CSS
-
-🔗 **GitHub Pages:**  `https://lanamiranda17.github.io/lana-portfolio/`
+- Apresentação, formação e áreas de atuação
+- Experiências: FutureLab / UFMG, GEDAI / UFLA e Comp Júnior
+- Projetos em destaque (Multi-Agent Study Assistant, Student Class Allocation Optimizer, Terroir E-commerce, CARP Routing Heuristics), projetos em desenvolvimento e outros trabalhos, com créditos às equipes
+- Pesquisa em otimização do agendamento cirúrgico e competências técnicas
+- Contato: e-mail, GitHub e LinkedIn
 
 ## Tecnologias
 
-### Geral
+- HTML5 semântico, CSS3 e JavaScript puro, sem frameworks nem etapa de build
+- Canvas 2D para o grafo animado do hero (caminho mínimo calculado com Dijkstra)
+- Google Fonts: Instrument Serif, Inter Tight e JetBrains Mono
 
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome
+Inclui layout responsivo, navegação por teclado, link para pular ao conteúdo, suporte a `prefers-reduced-motion` e animações pausadas quando o hero sai da tela.
 
-### Versão Bootstrap
+## Estrutura
 
-- Bootstrap
+```text
+index.html          Redireciona para portfolio/
+portfolio/          Versão profissional
+  index.html
+  css/style.css
+  js/main.js
+  assets/img/
+assets/             Recursos compartilhados (foto)
+bootstrap/          Versão acadêmica com Bootstrap
+tailwind/           Versão acadêmica com Tailwind CSS
+```
 
-### Versão Tailwind
+## Executar localmente
 
-- Tailwind CSS
+Como o site é estático, basta servir a pasta do repositório:
 
-## Funcionalidades
+```bash
+python3 -m http.server 8000
+```
 
-- Layout responsivo
-- Tema claro e escuro
-- Navegação entre as seções da página
-- Apresentação de experiências e projetos
-- Seção de habilidades e tecnologias
-- Links para redes profissionais
-- Área de contato
-- Duas implementações visuais utilizando frameworks CSS diferentes
+Depois, acesse `http://localhost:8000/`.
+
+## Versões acadêmicas
+
+As duas versões originais, desenvolvidas para comparar Bootstrap e Tailwind CSS, foram preservadas e continuam acessíveis:
+
+- Bootstrap: https://lanamiranda17.github.io/lana-portfolio/bootstrap/
+- Tailwind CSS: https://lanamiranda17.github.io/lana-portfolio/tailwind/
 
 ## Licença
 

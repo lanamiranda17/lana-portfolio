@@ -126,9 +126,9 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 @keyframes blink { 50% { opacity: 0; } }
 
 .profile .win-body { padding: 1.1rem; }
-.pf-photo { border: var(--b) solid var(--line); background: var(--bar); aspect-ratio: 1; overflow: hidden; }
-.pf-photo img, .pf-photo canvas { width: 100%; height: 100%; object-fit: cover; display: block; }
-.pf-photo canvas { image-rendering: pixelated; }
+/* Regular photo inside a frame with stepped (pixel) corners */
+.pf-photo { padding: 4px; background: var(--pink); aspect-ratio: 1; clip-path: polygon(0 8px, 4px 8px, 4px 4px, 8px 4px, 8px 0, calc(100% - 8px) 0, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, 100% 8px, 100% calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 0 calc(100% - 8px)); }
+.pf-photo img { width: 100%; height: 100%; object-fit: cover; display: block; clip-path: polygon(0 8px, 4px 8px, 4px 4px, 8px 4px, 8px 0, calc(100% - 8px) 0, calc(100% - 8px) 4px, calc(100% - 4px) 4px, calc(100% - 4px) 8px, 100% 8px, 100% calc(100% - 8px), calc(100% - 4px) calc(100% - 8px), calc(100% - 4px) calc(100% - 4px), calc(100% - 8px) calc(100% - 4px), calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 4px), 4px calc(100% - 4px), 4px calc(100% - 8px), 0 calc(100% - 8px)); }
 .pf-data { margin: .9rem 0 0; }
 .pf-data div { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; padding: .45rem 0; border-top: 2px dotted var(--line-soft); }
 .pf-data dt { font: .9rem var(--label); color: var(--pink); text-transform: uppercase; padding-top: .1rem; }

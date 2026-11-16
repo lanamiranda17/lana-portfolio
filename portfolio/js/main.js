@@ -86,29 +86,6 @@
     setTimeout(tick, 500);
   }
 
-  /* ---------- Profile photo rendered as pixel art ---------- */
-  const photo = document.querySelector(".pf-photo img");
-  if (photo) {
-    const pixelate = () => {
-      try {
-        const size = 88;
-        const c = document.createElement("canvas");
-        c.width = size; c.height = size;
-        const ctx = c.getContext("2d");
-        const s = Math.min(photo.naturalWidth, photo.naturalHeight);
-        ctx.drawImage(photo, (photo.naturalWidth - s) / 2, 0, s, s, 0, 0, size, size);
-        const d = ctx.getImageData(0, 0, size, size);
-        const a = d.data;
-        for (let k = 0; k < a.length; k += 4) for (let q = 0; q < 3; q++) a[k + q] = Math.round(a[k + q] / 24) * 24;
-        ctx.putImageData(d, 0, 0);
-        c.setAttribute("role", "img");
-        c.setAttribute("aria-label", photo.alt);
-        photo.replaceWith(c);
-      } catch (_) { /* keep the regular photo if the canvas is unavailable */ }
-    };
-    if (photo.complete && photo.naturalWidth) pixelate(); else photo.addEventListener("load", pixelate, { once: true });
-  }
-
   /* ---------- Copy e-mail ---------- */
   const toast = document.querySelector(".toast");
   let toastTimer;

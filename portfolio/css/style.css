@@ -304,3 +304,19 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
 }
+
+/* Featured timeline entry (UFLA-IMA) */
+.tl-featured .tl-date { margin-bottom: .6rem; }
+.tl-win { --c: var(--pink); }
+.tl-win .win-body > p:not(.tl-org):not(.tags):not(.tl-same):not(.tl-badges) { color: var(--text-2); }
+.tl-win .win-body > p + p { margin-top: .7rem; }
+.tl-win strong { color: var(--text); font-weight: 500; }
+.tl-win h3 { margin-top: .6rem; font: 1.65rem/1.1 var(--pixel); }
+.tl-badges { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .2rem; }
+.tl-item > .tl-badges { margin: .5rem 0 0; }
+.badge { display: inline-flex; align-items: center; gap: .4rem; padding: .15rem .55rem; font: .8rem var(--label); text-transform: uppercase; border: 2px solid currentColor; }
+.badge .heart { width: .8rem; }
+.badge-pink { color: var(--pink); }
+.badge-lilac { color: var(--lilac); }
+.tl-same { margin-top: 1rem; padding-left: .8rem; border-left: var(--b) solid var(--lilac); font-size: .9rem; color: var(--text-2); }
+.tl-win .link { margin-top: 1rem; }

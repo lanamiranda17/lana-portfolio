@@ -6,7 +6,7 @@
   <title>Lana Miranda - Engenharia de Software, IA e Pesquisa Operacional</title>
   <meta name="description" content="Portfólio de Lana Miranda, estudante de Ciência da Computação na UFLA. Desenvolvimento backend, pesquisa em otimização matemática e projetos com inteligência artificial.">
   <meta name="author" content="Lana Miranda">
-  <meta name="theme-color" content="#0d0e10">
+  <meta name="theme-color" content="#0f0d11">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Lana Miranda - Engenharia de Software, IA e Pesquisa Operacional">
   <meta property="og:description" content="Desenvolvimento backend, otimização matemática e aplicações com inteligência artificial.">
@@ -16,18 +16,15 @@
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Inter+Tight:wght@400;500;600&family=Jersey+15&display=swap">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" id="topo">
+  <header class="site-header">
     <div class="wrap header-inner">
-      <a class="mark" href="#inicio" aria-label="Lana Miranda - início">
-        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="25" r="3"/><circle cx="16" cy="7" r="3"/><circle cx="25" cy="22" r="3"/><path d="M7 25 16 7 25 22"/></svg>
-        <span>Lana Miranda</span>
-      </a>
+      <a class="logo" href="#inicio" aria-label="Lana Miranda - início"><svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><span>Lana Miranda</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
         <span class="sr-only">Abrir menu</span><span class="bar"></span><span class="bar"></span>
       </button>
@@ -39,36 +36,44 @@
         <a href="#contato"><i>05</i>Contato</a>
       </nav>
     </div>
+    <div class="wrap"><div class="progress" aria-hidden="true"><i></i></div></div>
   </header>
 
   <main id="conteudo">
-    <!-- HERO -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <canvas class="hero-graph" aria-hidden="true"></canvas>
-      <div class="wrap hero-inner">
-        <p class="eyebrow">Ciência da Computação · UFLA · Lavras, MG</p>
-        <h1 id="hero-title">Lana<br><em>Miranda</em></h1>
-        <p class="hero-fields">Engenharia de Software <span>/</span> Inteligência Artificial <span>/</span> Pesquisa Operacional</p>
-        <p class="hero-lead">Desenvolvo software para transformar problemas complexos em soluções práticas - de APIs REST a heurísticas de otimização e sistemas com LLMs.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
-          <a class="btn" href="https://github.com/lanamiranda17" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="label">Ciência da Computação · UFLA · Lavras, MG</p>
+          <h1 id="hero-title">Lana<br><span>Miranda</span></h1>
+          <p class="hero-fields">Pesquisa Operacional <span>/</span> Inteligência Artificial <span>/</span> Engenharia de Software</p>
+          <p class="hero-lead" data-type>Desenvolvo software para transformar problemas complexos em soluções práticas - de APIs REST a heurísticas de otimização e sistemas com LLMs.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projetos"><span aria-hidden="true">▶</span> Ver projetos</a>
+            <a class="btn" href="https://github.com/lanamiranda17" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <div class="win profile">
+          <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">perfil.exe</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+          <div class="win-body">
+            <div class="pf-photo"><img src="../assets/foto.jpg" alt="Foto de Lana Miranda" width="400" height="400"></div>
+            <dl class="pf-data">
+              <div><dt>Nome</dt><dd>Lana Miranda</dd></div>
+              <div><dt>Formação</dt><dd>Ciência da Computação · UFLA</dd></div>
+              <div><dt>Localização</dt><dd>Lavras, MG</dd></div>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SOBRE -->
     <section class="section" id="sobre" aria-labelledby="sobre-title">
       <div class="wrap grid-split">
         <header class="section-head reveal">
-          <p class="index">01 - Sobre</p>
+          <p class="label">01 - Sobre</p>
           <h2 id="sobre-title">Desenvolvo software e pesquiso otimização aplicada a problemas reais.</h2>
         </header>
-        <div class="about reveal">
-          <figure class="portrait">
-            <img src="../assets/foto.jpg" alt="Retrato de Lana Miranda" width="320" height="320" loading="lazy">
-          </figure>
+        <div class="reveal">
           <div class="prose">
             <p>Sou estudante de Ciência da Computação na Universidade Federal de Lavras (UFLA), com experiência em desenvolvimento backend, pesquisa aplicada em otimização matemática e projetos envolvendo inteligência artificial.</p>
             <p>Minha atuação combina Engenharia de Software, Pesquisa Operacional e o desenvolvimento de soluções tecnológicas para problemas reais - hoje, principalmente, algoritmos de otimização para o agendamento cirúrgico.</p>
@@ -77,152 +82,149 @@
             <div><dt>Formação</dt><dd>Bacharelado em Ciência da Computação - UFLA<br><span class="muted">Conclusão prevista para dezembro de 2027</span></dd></div>
             <div><dt>Formação técnica</dt><dd>Técnico em Mecânica integrado ao Ensino Médio - IFMG<br><span class="muted">2021 - 2023</span></dd></div>
             <div><dt>Idiomas</dt><dd>Português nativo · Inglês fluente</dd></div>
-            <div><dt>Base</dt><dd>Lavras, Minas Gerais, Brasil</dd></div>
+            <div><dt>Localização</dt><dd>Lavras, Minas Gerais, Brasil</dd></div>
           </dl>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIÊNCIA -->
     <section class="section" id="experiencia" aria-labelledby="exp-title">
       <div class="wrap grid-split">
         <header class="section-head reveal">
-          <p class="index">02 - Experiência</p>
+          <p class="label">02 - Experiência</p>
           <h2 id="exp-title">Experiências em pesquisa, desenvolvimento e gestão.</h2>
         </header>
         <ol class="timeline">
-          <li class="tl-item reveal is-current">
+          <li class="tl-item reveal">
+            <svg class="heart tl-heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg>
             <p class="tl-date"><time datetime="2026-05">mai 2026</time> - presente</p>
-            <div class="tl-body">
-              <h3>Bolsista de Iniciação Científica em Otimização</h3>
-              <p class="tl-org">FutureLab / UFMG</p>
-              <p>Pesquisa e desenvolvimento de algoritmos de otimização aplicados ao agendamento cirúrgico, em projeto EMBRAPII em parceria com a UFLA e o Hospital Mater Dei.</p>
-              <ul>
-                <li>Desenvolvimento de heurísticas em Python, integrando ferramentas de IA generativa ao fluxo de desenvolvimento, validação algorítmica e experimentos computacionais.</li>
-                <li>Revisão sistemática da literatura com emprego de ferramentas de IA na triagem e priorização de estudos.</li>
-              </ul>
-              <p class="tags">Python · Heurísticas · Programação matemática · Revisão sistemática</p>
-            </div>
+            <h3>Bolsista de Iniciação Científica em Otimização</h3>
+            <p class="tl-org">FutureLab / UFMG</p>
+            <p>Pesquisa e desenvolvimento de algoritmos de otimização aplicados ao agendamento cirúrgico, em projeto EMBRAPII em parceria com a UFLA e o Hospital Mater Dei.</p>
+            <ul>
+              <li>Desenvolvimento de heurísticas em Python, integrando ferramentas de IA generativa ao fluxo de desenvolvimento, validação algorítmica e experimentos computacionais.</li>
+              <li>Revisão sistemática da literatura com emprego de ferramentas de IA na triagem e priorização de estudos.</li>
+            </ul>
+            <p class="tags">Python · Heurísticas · Programação matemática · Revisão sistemática</p>
           </li>
-          <li class="tl-item reveal">
+          <li class="tl-item tl-featured reveal">
+            <svg class="heart tl-heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg>
             <p class="tl-date"><time datetime="2025-10">out 2025</time> - <time datetime="2026-05">mai 2026</time></p>
-            <div class="tl-body">
-              <h3>Desenvolvimento Backend</h3>
-              <p class="tl-org">GEDAI / UFLA</p>
-              <p>Desenvolvimento de APIs REST com Java e Spring Boot e testes unitários, colaborando em projetos com o Instituto Mineiro de Agropecuária (IMA).</p>
-              <p class="tags">Java · Spring Boot · APIs REST · Testes unitários</p>
+            <div class="win tl-win">
+              <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">gedai-ufla-ima</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+              <div class="win-body">
+                <p class="tl-badges"><span class="badge badge-pink"><svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg> Destaque</span><span class="badge badge-lilac">Projeto UFLA-IMA</span></p>
+                <h3>Desenvolvimento Backend</h3>
+                <p class="tl-org">GEDAI / UFLA</p>
+                <p>Desenvolvimento de APIs REST com Java e Spring Boot e testes unitários, colaborando em projetos com o Instituto Mineiro de Agropecuária (IMA).</p>
+                <p>Atuei no backend de módulos do <strong>GeoSidagro</strong> e do <strong>Emergências Sanitárias</strong>, plataformas da parceria UFLA-IMA voltadas à integração de dados e à modernização dos processos de fiscalização e defesa agropecuária.</p>
+                <p class="tags">Java · Spring Boot · APIs REST · Testes unitários</p>
+                <p class="tl-same">Mesmo projeto em que atuei antes como Scrum Master (jul 2024 - set 2025).</p>
+                <a class="link" href="https://ufla.br/noticias/institucional/17778-parceria-entre-ufla-e-ima-completa-um-ano-com-resultados-expressivos-na-modernizacao-da-defesa-agropecuaria" target="_blank" rel="noopener">» Ler matéria da UFLA sobre a parceria</a>
+              </div>
             </div>
           </li>
           <li class="tl-item reveal">
+            <svg class="heart tl-heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg>
             <p class="tl-date"><time datetime="2025-06">jun 2025</time> - <time datetime="2026-01">jan 2026</time></p>
-            <div class="tl-body">
-              <h3>Diretora de Vendas</h3>
-              <p class="tl-org">Comp Júnior - Empresa Júnior de Computação da UFLA</p>
-              <p>Liderança de equipe, estratégia comercial, treinamento e gestão de processos.</p>
-              <p class="tl-note">Também na Comp Júnior: Trainee de Front-End e Vendas (mar - jun 2025) e Assessora de Vendas (jan - mar 2026).</p>
-            </div>
+            <h3>Diretora de Vendas</h3>
+            <p class="tl-org">Comp Júnior - Empresa Júnior de Computação da UFLA</p>
+            <p>Liderança de equipe, estratégia comercial, treinamento e gestão de processos.</p>
+            <p class="tl-note">Também na Comp Júnior: Trainee de Front-End e Vendas (mar - jun 2025) e Assessora de Vendas (jan - mar 2026).</p>
           </li>
           <li class="tl-item reveal">
+            <svg class="heart tl-heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg>
             <p class="tl-date"><time datetime="2024-07">jul 2024</time> - <time datetime="2025-09">set 2025</time></p>
-            <div class="tl-body">
-              <h3>Scrum Master</h3>
-              <p class="tl-org">GEDAI / UFLA</p>
-              <p>Gestão ágil de projetos e condução das cerimônias Scrum em múltiplas equipes.</p>
-              <p class="tags">Scrum · Jira · OpenProject</p>
-            </div>
+            <p class="tl-badges"><span class="badge badge-lilac">Projeto UFLA-IMA</span></p>
+            <h3>Scrum Master</h3>
+            <p class="tl-org">GEDAI / UFLA</p>
+            <p>Gestão ágil de projetos e condução das cerimônias Scrum em múltiplas equipes, incluindo as do GeoSidagro e do Emergências Sanitárias.</p>
+            <p class="tags">Scrum · Jira · OpenProject</p>
           </li>
         </ol>
       </div>
     </section>
 
-    <!-- PROJETOS -->
     <section class="section" id="projetos" aria-labelledby="proj-title">
       <div class="wrap">
         <header class="section-head section-head-wide reveal">
-          <p class="index">03 - Projetos</p>
+          <p class="label">03 - Projetos</p>
           <h2 id="proj-title">Projetos de inteligência artificial, otimização e desenvolvimento de software.</h2>
           <p class="section-sub">Boa parte destes projetos foi desenvolvida em equipe; os créditos completos estão nos repositórios.</p>
         </header>
 
-        <article class="feature reveal" aria-labelledby="p-masa">
-          <div class="feature-visual visual-agents" aria-hidden="true">
-            <svg viewBox="0 0 420 300" class="agents-svg">
-              <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z"/></marker></defs>
-              <g class="edge"><path d="M80 150 H134" marker-end="url(#arr)"/><path d="M262 150 H284" marker-end="url(#arr)" class="flow"/><path d="M352 120 C352 52 200 52 200 112" marker-end="url(#arr)" class="flow flow-back"/></g>
-              <g class="node"><rect x="16" y="128" width="64" height="44" rx="6"/><text x="48" y="155">input</text></g>
-              <g class="node node-a"><rect x="136" y="120" width="128" height="60" rx="6"/><text x="200" y="146">Tutor</text><text x="200" y="164" class="sub">revisão · questões</text></g>
-              <g class="node node-a"><rect x="288" y="120" width="128" height="60" rx="6"/><text x="352" y="146">Avaliador</text><text x="352" y="164" class="sub">regras · gabarito</text></g>
-              <text x="276" y="42" class="lbl">LangGraph · ciclo de revisão</text>
-              <g class="node"><rect x="302" y="228" width="100" height="40" rx="6"/><text x="352" y="253">saída</text></g>
-              <path class="edge-line" d="M352 180 V226" marker-end="url(#arr)"/>
-            </svg>
-          </div>
-          <div class="feature-body">
-            <p class="kicker">Destaque · LLMs e sistemas multiagentes</p>
-            <h3 id="p-masa">Multi-Agent Study Assistant</h3>
-            <p>Assistente de revisão de estudos com dois agentes - Tutor e Avaliador - orquestrados por LangGraph, que produzem revisões teóricas, questões e gabaritos personalizados a partir do conteúdo informado. Usa LLMs via API Groq e transforma o notebook acadêmico original em uma aplicação Python modular, executável pelo terminal.</p>
-            <p class="stack">Python · LangGraph · LangChain · Groq API</p>
-            <p class="credit">Em colaboração com Caio Bueno Finocchio Martins - GCC128 Inteligência Artificial, UFLA.</p>
-            <a class="link" href="https://github.com/lanamiranda17/multi-agent-study-assistant" target="_blank" rel="noopener">Ver repositório <span aria-hidden="true">↗</span></a>
+        <article class="win feature reveal" aria-labelledby="p-masa">
+          <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">multi-agent-study-assistant</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+          <div class="feature-grid">
+            <div class="feature-visual visual-agents" aria-hidden="true">
+              <svg viewBox="0 36 420 244" class="agents-svg" shape-rendering="crispEdges">
+                <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z"/></marker></defs>
+                <g class="edge"><path d="M80 150 H134" marker-end="url(#arr)"/><path d="M264 150 H284" marker-end="url(#arr)" class="flow"/><path d="M352 118 V70 H200 V112" marker-end="url(#arr)" class="flow flow-back"/></g>
+                <g class="node"><rect x="16" y="128" width="64" height="44"/><text x="48" y="155">input</text></g>
+                <g class="node node-a"><rect x="136" y="120" width="128" height="60"/><text x="200" y="146">Tutor</text><text x="200" y="166" class="sub">revisão · questões</text></g>
+                <g class="node node-a"><rect x="288" y="120" width="128" height="60"/><text x="352" y="146">Avaliador</text><text x="352" y="166" class="sub">regras · gabarito</text></g>
+                <text x="276" y="56" class="lbl">LangGraph · ciclo de revisão</text>
+                <g class="node"><rect x="302" y="228" width="100" height="40"/><text x="352" y="253">saída</text></g>
+                <path class="edge-line" d="M352 180 V226" marker-end="url(#arr)"/>
+              </svg>
+            </div>
+            <div class="feature-body">
+              <p class="label">Destaque · LLMs e sistemas multiagentes</p>
+              <h3 id="p-masa">Multi-Agent Study Assistant</h3>
+              <p>Assistente de revisão de estudos com dois agentes - Tutor e Avaliador - orquestrados por LangGraph, que produzem revisões teóricas, questões e gabaritos personalizados a partir do conteúdo informado. Usa LLMs via API Groq e transforma o notebook acadêmico original em uma aplicação Python modular, executável pelo terminal.</p>
+              <p class="stack">Python · LangGraph · LangChain · Groq API</p>
+              <p class="credit">Em colaboração com Caio Bueno Finocchio Martins - GCC128 Inteligência Artificial, UFLA.</p>
+              <a class="link" href="https://github.com/lanamiranda17/multi-agent-study-assistant" target="_blank" rel="noopener">» Ver repositório</a>
+            </div>
           </div>
         </article>
 
-        <article class="feature feature-rev reveal" aria-labelledby="p-scao">
-          <figure class="feature-visual visual-shot">
-            <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span><em>ABC Aprendiz - Ensalamento</em></div>
-            <img src="assets/img/class-allocation-dashboard.png" alt="Painel principal do sistema de ensalamento com a distribuição de 120 alunos entre turmas" width="1919" height="1029" loading="lazy">
-          </figure>
-          <div class="feature-body">
-            <p class="kicker">Destaque · Otimização matemática</p>
-            <h3 id="p-scao">Student Class Allocation Optimizer</h3>
-            <p>Aplicação desktop que distribui alunos em turmas da manhã e da tarde respeitando disponibilidade e capacidade, buscando equilibrar a composição das turmas. Integra modelo de otimização, interface desktop, dashboard e geração de relatórios para um problema real de ensalamento da ABC Aprendiz.</p>
-            <p class="stack">Python · PuLP · PySide6</p>
-            <p class="credit">Desenvolvido em equipe durante o hackathon Desafio UniSoma 2026, com apoio de IA generativa no desenvolvimento.</p>
-            <a class="link" href="https://github.com/lanamiranda17/student-class-allocation-optimizer" target="_blank" rel="noopener">Ver repositório <span aria-hidden="true">↗</span></a>
+        <article class="win feature reveal" aria-labelledby="p-scao">
+          <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">student-class-allocation-optimizer</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+          <div class="feature-grid">
+            <figure class="feature-visual visual-shot">
+              <img src="assets/img/class-allocation-dashboard.png" alt="Painel principal do sistema de ensalamento com a distribuição de 120 alunos entre turmas" width="1919" height="1029" loading="lazy">
+            </figure>
+            <div class="feature-body">
+              <p class="label">Destaque · Otimização matemática</p>
+              <h3 id="p-scao">Student Class Allocation Optimizer</h3>
+              <p>Aplicação desktop que distribui alunos em turmas da manhã e da tarde respeitando disponibilidade e capacidade, buscando equilibrar a composição das turmas. Integra modelo de otimização, interface desktop, dashboard e geração de relatórios para um problema real de ensalamento da ABC Aprendiz.</p>
+              <p class="stack">Python · PuLP · PySide6</p>
+              <p class="credit">Desenvolvido em equipe durante o hackathon Desafio UniSoma 2026, com apoio de IA generativa no desenvolvimento.</p>
+              <a class="link" href="https://github.com/lanamiranda17/student-class-allocation-optimizer" target="_blank" rel="noopener">» Ver repositório</a>
+            </div>
           </div>
         </article>
 
         <div class="cards">
-          <article class="card reveal" aria-labelledby="p-terroir">
-            <p class="card-meta"><span>Web · Full stack</span><span>Equipe</span></p>
-            <h3 id="p-terroir">Terroir E-commerce</h3>
-            <p>E-commerce de cafés especiais com catálogo, autenticação JWT, carrinho de compras e painel administrativo para gestão de produtos. Projeto colaborativo da disciplina de Engenharia de Software da UFLA.</p>
-            <p class="stack">Java · Spring Boot · React · PostgreSQL</p>
-            <a class="link" href="https://github.com/lanamiranda17/terroir-coffee-ecommerce" target="_blank" rel="noopener">Ver repositório <span aria-hidden="true">↗</span></a>
+          <article class="win card reveal" aria-labelledby="p-terroir">
+            <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">terroir-coffee-ecommerce</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+            <div class="win-body card-body">
+              <p class="card-meta"><span>Web · Full stack</span><span>Equipe</span></p>
+              <h3 id="p-terroir">Terroir E-commerce</h3>
+              <p>E-commerce de cafés especiais com catálogo, autenticação JWT, carrinho de compras e painel administrativo para gestão de produtos. Projeto colaborativo da disciplina de Engenharia de Software da UFLA.</p>
+              <p class="stack">Java · Spring Boot · React · PostgreSQL</p>
+              <a class="link" href="https://github.com/lanamiranda17/terroir-coffee-ecommerce" target="_blank" rel="noopener">» Ver repositório</a>
+            </div>
           </article>
-          <article class="card reveal" aria-labelledby="p-carp">
-            <p class="card-meta"><span>Otimização combinatória</span><span>Equipe</span></p>
-            <h3 id="p-carp">CARP Routing Heuristics</h3>
-            <p>Heurísticas para o Problema de Roteamento em Arcos Capacitados: heurísticas construtivas, busca local e algoritmos em grafos para gerar rotas de baixo custo respeitando a capacidade da frota. Disciplina de Algoritmos em Grafos, UFLA.</p>
-            <p class="stack">Python · Grafos · Busca local</p>
-            <a class="link" href="https://github.com/lanamiranda17/carp-routing-heuristics" target="_blank" rel="noopener">Ver repositório <span aria-hidden="true">↗</span></a>
+          <article class="win card reveal" aria-labelledby="p-carp">
+            <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">carp-routing-heuristics</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+            <div class="win-body card-body">
+              <p class="card-meta"><span>Otimização combinatória</span><span>Equipe</span></p>
+              <h3 id="p-carp">CARP Routing Heuristics</h3>
+              <p>Heurísticas para o Problema de Roteamento em Arcos Capacitados: heurísticas construtivas, busca local e algoritmos em grafos para gerar rotas de baixo custo respeitando a capacidade da frota. Disciplina de Algoritmos em Grafos, UFLA.</p>
+              <p class="stack">Python · Grafos · Busca local</p>
+              <a class="link" href="https://github.com/lanamiranda17/carp-routing-heuristics" target="_blank" rel="noopener">» Ver repositório</a>
+            </div>
           </article>
         </div>
 
         <div class="subgroup reveal">
-          <h3 class="subhead"><span class="pulse" aria-hidden="true"></span>Em desenvolvimento</h3>
+          <h3 class="subhead"><svg class="heart blink" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg> Em desenvolvimento</h3>
           <ul class="rows">
-            <li>
-              <a href="https://github.com/mvk999/progWeb-campus-reservas" target="_blank" rel="noopener">
-                <span class="row-title">Campus Reservas</span>
-                <span class="row-desc">Reserva de recursos universitários com autenticação, permissões, restrições de agendamento e testes no backend.</span>
-                <span class="row-stack">Python · Django · SQLite</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/ArthurDp78/GlicoAcesso" target="_blank" rel="noopener">
-                <span class="row-title">GlicoAcesso</span>
-                <span class="row-desc">Plataforma colaborativa para facilitar o acesso a medicamentos e insumos para diabetes - em fase de planejamento e arquitetura.</span>
-                <span class="row-stack">Arquitetura · APIs · Microsserviços</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/CaioBFM/Trabalhos---IA" target="_blank" rel="noopener">
-                <span class="row-title">Trabalhos de Inteligência Artificial</span>
-                <span class="row-desc">Coleção colaborativa com KNN, K-means, Perceptron/MLP e agentes inteligentes para Othello.</span>
-                <span class="row-stack">Python · Scikit-learn</span>
-              </a>
-            </li>
+            <li><a href="https://github.com/mvk999/progWeb-campus-reservas" target="_blank" rel="noopener"><span class="row-title">Campus Reservas</span><span class="row-desc">Reserva de recursos universitários com autenticação, permissões, restrições de agendamento e testes no backend.</span><span class="row-stack">Python · Django · SQLite</span></a></li>
+            <li><a href="https://github.com/ArthurDp78/GlicoAcesso" target="_blank" rel="noopener"><span class="row-title">GlicoAcesso</span><span class="row-desc">Plataforma colaborativa para facilitar o acesso a medicamentos e insumos para diabetes - em fase de planejamento e arquitetura.</span><span class="row-stack">Arquitetura · APIs · Microsserviços</span></a></li>
+            <li><a href="https://github.com/CaioBFM/Trabalhos---IA" target="_blank" rel="noopener"><span class="row-title">Trabalhos de Inteligência Artificial</span><span class="row-desc">Coleção colaborativa com KNN, K-means, Perceptron/MLP e agentes inteligentes para Othello.</span><span class="row-stack">Python · Scikit-learn</span></a></li>
           </ul>
         </div>
 
@@ -237,36 +239,47 @@
       </div>
     </section>
 
-    <!-- PESQUISA E COMPETÊNCIAS -->
     <section class="section" id="pesquisa" aria-labelledby="pesq-title">
       <div class="wrap">
         <header class="section-head section-head-wide reveal">
-          <p class="index">04 - Pesquisa e competências</p>
+          <p class="label">04 - Pesquisa e competências</p>
           <h2 id="pesq-title">Minha pesquisa atual e as áreas em que atuo.</h2>
         </header>
 
-        <div class="research reveal">
-          <p class="kicker">Pesquisa em andamento</p>
-          <h3>Otimização do agendamento cirúrgico</h3>
-          <p>Projeto de pesquisa aplicada (EMBRAPII) conduzido pelo FutureLab / UFMG em parceria com a UFLA e o Hospital Mater Dei, voltado ao desenvolvimento de modelos e heurísticas para apoiar a alocação de salas e recursos cirúrgicos. Minha atuação envolve implementação de heurísticas, experimentos computacionais e revisão sistemática da literatura.</p>
+        <div class="win research reveal">
+          <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">pesquisa-atual</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+          <div class="win-body">
+            <p class="label">Pesquisa em andamento</p>
+            <h3>Otimização do agendamento cirúrgico</h3>
+            <p>Projeto de pesquisa aplicada (EMBRAPII) conduzido pelo FutureLab / UFMG em parceria com a UFLA e o Hospital Mater Dei, voltado ao desenvolvimento de modelos e heurísticas para apoiar a alocação de salas e recursos cirúrgicos. Minha atuação envolve implementação de heurísticas, experimentos computacionais e revisão sistemática da literatura.</p>
+          </div>
         </div>
 
-        <h3 class="subhead areas-title reveal">Áreas de Interesse</h3>
+        <h3 class="areas-title reveal">Áreas de Interesse</h3>
         <div class="areas">
-          <section class="area reveal" aria-labelledby="a1">
-            <span class="area-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3v17h17"/><path d="M7 6c1.5 7 3.5 10 6 10s4-3 6-8"/><circle cx="13" cy="16" r="1.8"/></svg></span>
-            <h4 id="a1">Pesquisa Operacional</h4>
-            <ul><li>Programação matemática</li><li>Otimização combinatória</li><li>Heurísticas e metaheurísticas</li><li>Experimentos computacionais</li></ul>
+          <section class="win area reveal" aria-labelledby="a1">
+            <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">po</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+            <div class="win-body">
+              <svg class="ico" viewBox="0 0 12 8" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM0 1h1v1h-1zM2 1h2v1h-2zM11 1h1v1h-1zM0 2h1v1h-1zM4 2h1v1h-1zM10 2h1v1h-1zM0 3h1v1h-1zM5 3h1v1h-1zM9 3h1v1h-1zM0 4h1v1h-1zM6 4h1v1h-1zM8 4h1v1h-1zM0 5h1v1h-1zM0 6h1v1h-1zM0 7h12v1h-12z"/><path class="acc" d="M7 5h1v1h-1zM6 6h3v1h-3z"/></svg>
+              <h4 id="a1">Pesquisa Operacional</h4>
+              <ul><li>Programação matemática</li><li>Otimização combinatória</li><li>Heurísticas e metaheurísticas</li><li>Experimentos computacionais</li></ul>
+            </div>
           </section>
-          <section class="area reveal" aria-labelledby="a2">
-            <span class="area-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="6" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="19" cy="18" r="2"/><path d="M7 7l3.3 3.6M7 17l3.3-3.6M13.7 10.6 17 7M13.7 13.4 17 17"/></svg></span>
-            <h4 id="a2">Inteligência Artificial</h4>
-            <ul><li>Aplicações com LLMs</li><li>Sistemas multiagentes</li><li>Aprendizado de máquina</li><li>IA aplicada à revisão sistemática</li></ul>
+          <section class="win area reveal" aria-labelledby="a2">
+            <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">ia</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+            <div class="win-body">
+              <svg class="ico" viewBox="0 0 11 11" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M2 0h1v1h-1zM4 0h1v1h-1zM6 0h1v1h-1zM8 0h1v1h-1zM0 2h1v1h-1zM2 2h7v1h-7zM10 2h1v1h-1zM2 3h1v1h-1zM8 3h1v1h-1zM0 4h1v1h-1zM2 4h1v1h-1zM8 4h1v1h-1zM10 4h1v1h-1zM2 5h1v1h-1zM8 5h1v1h-1zM0 6h1v1h-1zM2 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM0 8h1v1h-1zM2 8h7v1h-7zM10 8h1v1h-1zM2 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1z"/><path class="acc" d="M4 4h3v1h-3zM4 5h3v1h-3zM4 6h3v1h-3z"/></svg>
+              <h4 id="a2">Inteligência Artificial</h4>
+              <ul><li>Aplicações com LLMs</li><li>Sistemas multiagentes</li><li>Aprendizado de máquina</li><li>IA aplicada à revisão sistemática</li></ul>
+            </div>
           </section>
-          <section class="area reveal" aria-labelledby="a3">
-            <span class="area-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span>
-            <h4 id="a3">Engenharia de Software</h4>
-            <ul><li>Desenvolvimento backend</li><li>APIs REST e bancos de dados relacionais</li><li>Arquitetura de software</li><li>Testes unitários</li></ul>
+          <section class="win area reveal" aria-labelledby="a3">
+            <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">eng</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+            <div class="win-body">
+              <svg class="ico" viewBox="0 0 13 9" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M3 0h1v1h-1zM8 0h2v1h-2zM2 1h1v1h-1zM8 1h1v1h-1zM10 1h1v1h-1zM2 2h1v1h-1zM7 2h1v1h-1zM10 2h1v1h-1zM1 3h1v1h-1zM7 3h1v1h-1zM11 3h1v1h-1zM0 4h1v1h-1zM6 4h1v1h-1zM12 4h1v1h-1zM1 5h1v1h-1zM6 5h1v1h-1zM11 5h1v1h-1zM2 6h1v1h-1zM5 6h1v1h-1zM10 6h1v1h-1zM2 7h1v1h-1zM5 7h1v1h-1zM10 7h1v1h-1zM3 8h2v1h-2zM9 8h1v1h-1z"/></svg>
+              <h4 id="a3">Engenharia de Software</h4>
+              <ul><li>Desenvolvimento backend</li><li>APIs REST e bancos de dados relacionais</li><li>Arquitetura de software</li><li>Testes unitários</li></ul>
+            </div>
           </section>
         </div>
 
@@ -280,21 +293,24 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
     <section class="section contact" id="contato" aria-labelledby="contato-title">
       <div class="wrap">
-        <p class="index reveal">05 - Contato</p>
-        <h2 id="contato-title" class="contact-title reveal">Vamos <em>conversar</em>?</h2>
-        <p class="section-sub reveal">Aberta a conversas sobre engenharia de software, otimização e inteligência artificial.</p>
-        <div class="contact-links reveal">
-          <div class="email-row">
-            <a class="email" href="mailto:lanamiranda112@gmail.com">lanamiranda112@gmail.com</a>
-            <button class="copy" type="button" data-copy="lanamiranda112@gmail.com">Copiar</button>
+        <div class="win dialog reveal">
+          <div class="win-bar"><span class="win-hearts"><svg class="heart h-1" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-2" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg><svg class="heart h-3" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg></span><span class="win-title">nova-mensagem.txt</span><svg class="win-x" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M0 0h1v1h-1zM4 0h1v1h-1zM1 1h1v1h-1zM3 1h1v1h-1zM2 2h1v1h-1zM1 3h1v1h-1zM3 3h1v1h-1zM0 4h1v1h-1zM4 4h1v1h-1z"/></svg></div>
+          <div class="win-body">
+            <p class="label">05 - Contato</p>
+            <h2 id="contato-title">Vamos conversar?</h2>
+            <p class="section-sub">Aberta a conversas sobre otimização, inteligência artificial e engenharia de software.</p>
+            <div class="email-row">
+              <a class="email" href="mailto:lanamiranda112@gmail.com">lanamiranda112@gmail.com</a>
+              <button class="copy" type="button" data-copy="lanamiranda112@gmail.com">Copiar</button>
+            </div>
+            <div class="actions actions-center">
+              <a class="btn btn-primary" href="mailto:lanamiranda112@gmail.com"><svg class="heart" viewBox="0 0 7 6" shape-rendering="crispEdges" aria-hidden="true" focusable="false"><path d="M1 0h2v1h-2zM4 0h2v1h-2zM0 1h7v1h-7zM0 2h7v1h-7zM1 3h5v1h-5zM2 4h3v1h-3zM3 5h1v1h-1z"/><path class="shine" d="M1 1h1v1H1z"/></svg> Enviar e-mail</a>
+              <a class="btn" href="https://github.com/lanamiranda17" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
           </div>
-          <ul class="socials">
-            <li><a href="https://github.com/lanamiranda17" target="_blank" rel="noopener"><span>GitHub</span><span class="muted">github.com/lanamiranda17</span><span aria-hidden="true">↗</span></a></li>
-            <li><a href="https://www.linkedin.com/in/lana-miranda/" target="_blank" rel="noopener"><span>LinkedIn</span><span class="muted">linkedin.com/in/lana-miranda</span><span aria-hidden="true">↗</span></a></li>
-          </ul>
         </div>
       </div>
     </section>

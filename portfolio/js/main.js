@@ -48,6 +48,16 @@
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
     document.querySelectorAll(".reveal").forEach((el) => reveal.observe(el));
+
+    /* ---------- Timeline: highlight the entry being read ---------- */
+    const tl = [...document.querySelectorAll(".tl-item")];
+    const reading = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!en.isIntersecting) return;
+        tl.forEach((li) => li.classList.toggle("is-reading", li === en.target));
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    tl.forEach((li) => reading.observe(li));
   } else {
     document.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-in"));
   }
@@ -75,7 +85,7 @@
   const canvas = document.querySelector(".hero-graph");
   if (!canvas || !canvas.getContext) return;
   const ctx = canvas.getContext("2d");
-  const ACCENT = "240,168,90";
+  const ACCENT = "201,122,152";
   const INK = "185,184,178";
   let W = 0, H = 0, dpr = 1, nodes = [], edges = [], adj = [];
   let path = null, pathStart = 0, nextPathAt = 0;

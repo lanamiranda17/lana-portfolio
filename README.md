@@ -6,6 +6,12 @@ Portfólio profissional de **Lana Miranda**, estudante de Ciência da Computaç�
 
 O endereço raiz abre diretamente a versão profissional, em [`portfolio/`](portfolio/).
 
+## Histórico do projeto
+
+O projeto foi criado inicialmente como trabalho de uma disciplina, com o objetivo de comparar frameworks CSS: a mesma página foi desenvolvida em duas versões, uma com **Bootstrap** e outra com **Tailwind CSS**.
+
+Posteriormente, com o apoio de ferramentas de inteligência artificial, ele foi adaptado para uso como portfólio profissional, com nova identidade visual, conteúdo atualizado e implementação em HTML, CSS e JavaScript puros. As versões originais da disciplina foram preservadas no repositório.
+
 ## Conteúdo
 
 - Apresentação, formação e áreas de atuação
@@ -48,7 +54,7 @@ Depois, acesse `http://localhost:8000/`.
 
 ## Versões acadêmicas
 
-As duas versões originais, desenvolvidas para comparar Bootstrap e Tailwind CSS, foram preservadas e continuam acessíveis:
+As duas versões desenvolvidas para a disciplina foram preservadas e continuam acessíveis:
 
 - Bootstrap: https://lanamiranda17.github.io/lana-portfolio/bootstrap/
 - Tailwind CSS: https://lanamiranda17.github.io/lana-portfolio/tailwind/

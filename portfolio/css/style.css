@@ -131,15 +131,7 @@ em { font-style: italic; }
 .hero-lead { margin-top: 1rem; max-width: 36rem; color: var(--text-2); font-size: clamp(1rem, 1.5vw, 1.12rem); }
 .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2.25rem; }
 
-.status { position: absolute; left: 0; right: 0; bottom: 2rem; }
-.status-card {
-  display: inline-flex; align-items: center; gap: .7rem; max-width: 100%;
-  padding: .55rem .9rem; border: 1px solid var(--line); border-radius: 8px;
-  background: rgba(19, 20, 24, .7); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-  font-size: .82rem; color: var(--text-2);
-}
-.status-label { font: 500 .7rem var(--mono); text-transform: uppercase; letter-spacing: .08em; color: var(--accent); }
-.dot, .pulse { width: .45rem; height: .45rem; border-radius: 50%; background: var(--accent); flex: none; box-shadow: 0 0 0 0 var(--accent-soft); animation: pulse 2.4s infinite; }
+.pulse { width: .45rem; height: .45rem; border-radius: 50%; background: var(--accent); flex: none; box-shadow: 0 0 0 0 var(--accent-soft); animation: pulse 2.4s infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(201,122,152,.45); } 70%, 100% { box-shadow: 0 0 0 .5rem rgba(201,122,152,0); } }
 
 /* ---------- Sections ---------- */
@@ -355,7 +347,6 @@ em { font-style: italic; }
   .nav a { padding: .9rem 0; border-bottom: 1px solid var(--line); border-radius: 0; font-size: 1rem; }
   .site-header.menu-open { background: rgba(13,14,16,.97); }
 
-  .hero { padding-bottom: 7rem; }
   .about { grid-template-columns: 1fr; }
   .portrait { width: min(16rem, 100%); }
   .facts { grid-template-columns: 1fr; }
